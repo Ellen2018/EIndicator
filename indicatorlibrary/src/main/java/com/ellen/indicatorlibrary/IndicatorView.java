@@ -66,6 +66,7 @@ public class IndicatorView extends RelativeLayout {
             }
             View view;
             linearLayout.addView(view = indicatorViewAdapter.getItemView(i));
+            indicatorViewAdapter.agoChange(view,i);
             viewHashMap.put(i,view);
         }
     }
